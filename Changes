@@ -1,6 +1,11 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+ [BUG FIXES]
+ - Fix the formatting of the list in the "DESCRIPTION" Section of the POD
+ - Ammend the "SEE ALSO" POD section to include better wordage
+
+0.01  2012-07-17
  [NEW FEATURES]
  - Add documentation
  - Add basic tests

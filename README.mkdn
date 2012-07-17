@@ -4,7 +4,7 @@ List::Compare::Lite - Compare the elements of two lists
 
 # VERSION
 
-version 0.01
+version 0.02
 
 # SYNOPSIS
 
@@ -29,7 +29,7 @@ version 0.01
 # DESCRIPTION
 
 For the given two lists, calculate:
-=for :list
+
 the intersection (which elements appear in both given arrays)
 the (symmetric) difference (which elements appear in both given arrays, but not in both)
 the union (which elements appear in both given arrays)
@@ -67,9 +67,9 @@ needs:
 
 # SEE ALSO
 
-This module is completely based of the code found in the [perlfaq4](http://perldoc.perl.org/perlfaq4.html\#How-do-I-compute-the-difference-of-two-arrays?-How-do-I-compute-the-intersection-of-two-arrays?), so all credit must go to the author.
+This module is completely based of the code found in [perlfaq4](http://perldoc.perl.org/perlfaq4.html\#How-do-I-compute-the-difference-of-two-arrays?-How-do-I-compute-the-intersection-of-two-arrays?), so all credit must go to the author of that document.
 
-`List::Compare` is a more comprehensive and object-orientated module which provided the inspiration for the naming of this module.
+[List::Compare](http://search.cpan.org/perldoc?List::Compare) is a more comprehensive and object-orientated module which provided the inspiration for the naming of this module.
 
 # AUTHOR
 
