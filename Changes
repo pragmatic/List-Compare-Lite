@@ -1,3 +1,14 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+ [NEW FEATURES]
+ - Add documentation
+ - Add basic tests
+
+ [ENHANCEMENTS]
+ - Remove vars pragma
+
+   The use of the vars pragma is deprecated, updated to declare  the
+   Exporter related variable using the our keywork instead
+
+ - Customize dist.ini
