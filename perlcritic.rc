@@ -14,7 +14,7 @@ equivalent_modules = Moose
 equivalent_modules = Moose
 
 [Bangs::ProhibitVagueNames]
-names = bar bat data foo info item obj object temp tmp val var
+names = bar bat data foo info item obj object temp tmp val var array
 
 [BuiltinFunctions::ProhibitStringyEval]
 allow_includes = 1
