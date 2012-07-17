@@ -1,0 +1,11 @@
+xt/perltidy.rc
+xt/perlcritic.rc
+/List-Compare-Lite*
+*.swp
+*.bak
+*.tdy
+*.old
+.build
+.includepath
+.project
+.DS_Store
