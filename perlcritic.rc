@@ -4,7 +4,7 @@ verbose  = 9
 
 theme = (bangs || bugs || complexity || core || cosmetic || danger || lax || maintenance || moose || pbp || performance || portability || pulp || readability || security || strictersubs || swift || tests || unicode) && (! (compatibility || deprecated || editor || more || nits || tics))
 
-exclude = RequireTidyCode RequirePodSections ProhibitPostfixControls RequireRcsKeywords RequireExplicitPackage Moose::ProhibitMultipleWith RequirePodLinksIncludeText Documentation::RequirePodAtEnd ValuesAndExpressions::ProhibitVersionStrings Bangs::ProhibitCommentedOutCode CodeLayout::RequireTidyCode ControlStructures::ProhibitPostfixControls ControlStructures::ProhibitUnlessBlocks ControlStructures::ProhibitUntilBlocks Documentation::PodSpelling Documentation::RequirePodSections ErrorHandling::RequireCarping Miscellanea::RequireRcsKeywords Modules::RequireExplicitInclusion Modules::RequireExplicitPackage References::ProhibitDoubleSigils Subroutines::ProhibitCallsToUndeclaredSubs
+exclude = RequireTidyCode RequirePodSections ProhibitPostfixControls RequireRcsKeywords RequireExplicitPackage Moose::ProhibitMultipleWith RequirePodLinksIncludeText Documentation::RequirePodAtEnd ValuesAndExpressions::ProhibitVersionStrings Bangs::ProhibitCommentedOutCode CodeLayout::RequireTidyCode ControlStructures::ProhibitPostfixControls ControlStructures::ProhibitUnlessBlocks ControlStructures::ProhibitUntilBlocks Documentation::PodSpelling Documentation::RequirePodSections ErrorHandling::RequireCarping Miscellanea::RequireRcsKeywords Modules::RequireExplicitInclusion Modules::RequireExplicitPackage References::ProhibitDoubleSigils Subroutines::ProhibitCallsToUndeclaredSubs Bangs::ProhibitVagueNames Subroutines::ProhibitSubroutinePrototypes ClassHierarchies::ProhibitExplicitISA
 include = Moose::ProhibitNewMethod Moose::RequireCleanNamespace Moose::RequireMakeImmutable
 
 [TestingAndDebugging::RequireUseStrict]
@@ -12,9 +12,6 @@ equivalent_modules = Moose
 
 [TestingAndDebugging::RequireUseWarnings]
 equivalent_modules = Moose
-
-[Bangs::ProhibitVagueNames]
-names = bar bat data foo info item obj object temp tmp val var array
 
 [BuiltinFunctions::ProhibitStringyEval]
 allow_includes = 1

@@ -19,7 +19,7 @@ our ( @ISA, @EXPORT_OK, %EXPORT_TAGS );
 BEGIN {
     @ISA       = qw{ Exporter };
     @EXPORT_OK = qw{
-        compare compareref intersection difference union
+        compare intersection difference union
     };
     %EXPORT_TAGS = ( all => \@EXPORT_OK, );
 }
