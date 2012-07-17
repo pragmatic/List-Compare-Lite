@@ -58,7 +58,7 @@ __END__
 
 =encoding utf8
 
-=for Pod::Coverage
+=for Pod::Coverage compare
 
 =head1 SYNOPSIS
 
