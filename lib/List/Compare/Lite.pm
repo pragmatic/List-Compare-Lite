@@ -83,6 +83,7 @@ __END__
 =head1 DESCRIPTION
 
 For the given two lists, calculate:
+
 =for :list
 the intersection (which elements appear in both given arrays)
 the (symmetric) difference (which elements appear in both given arrays, but not in both)
@@ -119,10 +120,10 @@ needs:
 
 =head1 SEE ALSO
 
-This module is completely based of the code found in the L<perlfaq4|http://perldoc.perl.org/perlfaq4.html#How-do-I-compute-the-difference-of-two-arrays?-How-do-I-compute-the-intersection-of-two-arrays?>, so all credit must go to the author.
+This module is completely based of the code found in L<perlfaq4|http://perldoc.perl.org/perlfaq4.html#How-do-I-compute-the-difference-of-two-arrays?-How-do-I-compute-the-intersection-of-two-arrays?>, so all credit must go to the author of that document.
 
 =for :list
-C<List::Compare> is a more comprehensive and object-orientated module which provided the inspiration for the naming of this module.
+L<List::Compare> is a more comprehensive and object-orientated module which provided the inspiration for the naming of this module.
 
 =cut
 
