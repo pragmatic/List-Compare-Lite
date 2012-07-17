@@ -1,1 +1,106 @@
+# NAME
 
+List::Compare::Lite - Compare the elements of two lists
+
+# VERSION
+
+version 0.01
+
+# SYNOPSIS
+
+    use List::Compare::Lite ':all';
+
+    my @list_a = ( qw{ a b c 3 4 5 } );
+    my @list_b = ( qw{ c d e 1 2 3 } );
+
+    my $intersection    = intersection  ( \@list_a, \@list_b );
+    my $difference      = difference    ( \@list_a, \@list_b );
+    my $union           = union         ( \@list_a, \@list_b );
+
+    # or...
+
+    my ( $intersection, $difference, $union )
+       = compare( \@list_a, \@list_b );
+
+    # $intersection ~~ [ qw{ 3 c }                    ]
+    # $difference   ~~ [ qw{ e a d 2 1 4 b 5 }        ]
+    # $union        ~~ [ qw{ e a 3 d 2 1 4 c b 5 }    ]
+
+# DESCRIPTION
+
+For the given two lists, calculate:
+=for :list
+the intersection (which elements appear in both given arrays)
+the (symmetric) difference (which elements appear in both given arrays, but not in both)
+the union (which elements appear in both given arrays)
+
+# FUNCTIONS
+
+## intersection
+
+    my $intersection = intersection( \@array_1 \@array_2 );
+
+Return an array reference to a list of items that appear one or more times in both lists (their intersection).
+
+## difference
+
+    my $difference = difference( \@array_1 \@array_2 );
+
+Returns an array reference to a list of items that appear one or more times in either the first or the second list, but not in both (their symmetric difference).
+
+## union
+
+    my $union = union( \@array_1 \@array_2 );
+
+Returns an array reference to a list of items that appear one or more times in either list (their union).
+
+# EXPORTS
+
+Nothing by default. To import all of this module's symbols, do the conventional
+
+    use List::Compare::Lite ':all';
+
+It may make more sense though to only import the stuff your program actually
+needs:
+
+    use List::Compare::Lite qw{ difference };
+
+# SEE ALSO
+
+This module is completely based of the code found in the [perlfaq4](http://perldoc.perl.org/perlfaq4.html\#How-do-I-compute-the-difference-of-two-arrays?-How-do-I-compute-the-intersection-of-two-arrays?), so all credit must go to the author.
+
+`List::Compare` is a more comprehensive and object-orientated module which provided the inspiration for the naming of this module.
+
+# AUTHOR
+
+Peter Hallam <pragmatic@cpan.org>
+
+# COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2012 by Peter Hallam.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+# DISCLAIMER OF WARRANTY
+
+BECAUSE THIS SOFTWARE IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY
+FOR THE SOFTWARE, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT
+WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER
+PARTIES PROVIDE THE SOFTWARE "AS IS" WITHOUT WARRANTY OF ANY KIND,
+EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE
+SOFTWARE IS WITH YOU. SHOULD THE SOFTWARE PROVE DEFECTIVE, YOU ASSUME
+THE COST OF ALL NECESSARY SERVICING, REPAIR, OR CORRECTION.
+
+IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR
+REDISTRIBUTE THE SOFTWARE AS PERMITTED BY THE ABOVE LICENCE, BE LIABLE
+TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL, OR
+CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE
+SOFTWARE (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING
+RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A
+FAILURE OF THE SOFTWARE TO OPERATE WITH ANY OTHER SOFTWARE), EVEN IF
+SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
+DAMAGES.
